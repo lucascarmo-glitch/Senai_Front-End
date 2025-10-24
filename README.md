@@ -101,7 +101,7 @@ Você pode:
 - **Abrir o arquivo `index.html`** diretamente no navegador;  
   ou  
 - **Acessar a versão hospedada no GitHub Pages:**    
-  👉 `https://seu-usuario.github.io/Game_Mania-Bootstrap/`
+  👉 `https://lucascarmo-glitch.github.io/Senai_Front-End/`
 
 ---
 
