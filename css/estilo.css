@@ -1,0 +1,685 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+/* >>>>>>>>>>NAVBAR<<<<<<<<<< */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    /*Ho-Ve-Blur*/
+    border-bottom: 1px solid #e5e7eb;
+    /*border-gray200*/
+
+}
+
+header .container-fluid {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+}
+
+/* >>>>>>>>>>LOGO<<<<<<<<<< */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-icon {
+    position: relative;
+    /* centralização absoluta */
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom right, #2563eb, #1e40af);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0, 1);
+}
+
+.logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* centralização perfeita */
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-align: center;
+}
+
+.logo-name {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+    /*gray-900*/
+    margin-right: 2rem;
+}
+
+/* >>>>>>>>>>NAV LINKS<<<<<<<<<< */
+
+.navbar-nav {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 700;
+    transition: color 0.2s;
+    margin-right: 2rem;
+}
+
+.navbar-nav li a:hover {
+    color: #2563eb;
+}
+
+/* >>>>>>>>>>>SEARCH BAR<<<<<<<<<<< */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-form input.form-control {
+    width: 400px;
+    /* barra maior */
+    height: 42px;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    color: #424242;
+}
+
+.search-form .btn-outline-success {
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    border: solid #2563eb;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 300;
+    transition: background 0.2s;
+    margin-right: 3rem;
+}
+
+.search-form .btn-outline-success:hover {
+    background: #1e40af;
+    border: #1e40af;
+}
+
+/* >>>>>>>>>>LOGIN BUTTON<<<<<<<<<< */
+.btn-login {
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #2563eb;
+    background: #fff;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-right: 3rem;
+}
+
+.btn-login:hover {
+    background: #2563eb;
+    /* azul */
+    border-color: #2563eb;
+    color: white;
+}
+
+/* >>>>>>>>>>CART ICON<<<<<<<<<< */
+
+#cart-btn {
+    position: relative;
+    padding: 0.5rem;
+    color: #374151;
+    font-size: 1.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#cart-btn:hover {
+    color: #2563eb;
+}
+
+#cart-btn span {
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HERO SECTION<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.hero {
+    background: linear-gradient(to bottom, #e7f1fd, #ffffff);
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.hero-content span {
+    color: #2563eb;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 3rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+
+.btn-primary {
+    text-decoration: none;
+    margin-top: auto;
+    background-color: #2563eb;
+    color: white;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    transition: 0.3 ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+    color: white;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    background-color: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e7f1fd;
+}
+
+.categories {
+    padding: 5rem 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    margin-top: -2rem;
+
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+/* >>>>>>>>>>CARD GRID<<<<<<<<<< */
+
+/* ===============================
+   PADRONIZAÇÃO DE IMAGENS
+   =============================== */
+#section-cards .card {
+    display: flex;
+    flex-direction: column;
+    /* garante que a imagem e o conteúdo fiquem empilhados */
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 100%;
+    /* card ocupa altura completa da coluna */
+}
+
+/* Cria "janela" proporcional para a imagem */
+#section-cards .card .card-img-top {
+    width: 100%;
+    height: 200px;
+    /* altura fixa padrão */
+    object-fit: cover;
+    /* mantém proporção e corta excesso */
+    object-position: center;
+    /* centraliza corte */
+    display: block;
+}
+
+/* ===============================
+   CORPO DO CARD
+   =============================== */
+#section-cards .card-body {
+    flex-grow: 1;
+    /* garante cards da mesma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+/* ===============================
+   CORPO DO CARD
+   =============================== */
+#section-cards .card-body h4 {
+    margin-top: 0.5rem;
+    text-align: justify;
+    color: #1f2937;
+    font-weight: 700;
+    font-size: 1.45rem;
+}
+
+#section-cards .card-body p {
+    margin-top: 0.1rem;
+    text-align: left;
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* ===============================
+   BOTÕES E TEXTO
+   =============================== */
+#section-cards .card-body .btn {
+    margin-top: auto;
+    /* empurra o botão para baixo */
+    background: #2563eb;
+    color: white;
+    transform: background 0.2 ease;
+}
+
+#section-cards .card-body .btn:hover {
+    margin-top: auto;
+    /* empurra o botão para baixo */
+    background: #1e40af;
+}
+
+/* ===============================
+   RESPONSIVIDADE
+   =============================== */
+@media (max-width: 576px) {
+    #section-cards .card .card-img-top {
+        height: 180px;
+        /* imagem menor no mobile */
+    }
+}
+
+@media (min-width: 992px) {
+    #section-cards .card .card-img-top {
+        height: 220px;
+        /* imagem maior no desktop */
+    }
+}
+
+/* ===============================
+   EFEITO DE HOVER NOS CARDS
+   =============================== */
+#section-cards .card {
+    transition: transform 0.3s ease;
+    /* suaviza movimento e sombra */
+}
+
+#section-cards .card:hover {
+    transform: translateY(-5px);
+    /* levanta o card 5px */
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+#footer .container-fluid {
+    background: #1f2937;
+    width: 100%;
+    min-height: 12rem;
+    display: flex;
+    /* distribui logo e nav lado a lado */
+    flex-direction: column;
+    /* em telas pequenas, empilha */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    /* reduzido para melhor ajuste */
+    box-sizing: border-box;
+    margin-top: 7rem;
+}
+
+/* >>>>>>>>>>FOOTER LOGO<<<<<<<<<< */
+
+#footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#footer-logo .footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+    /* mantém o tamanho quando minimizado*/
+    border-radius: 0.5rem;
+    background: linear-gradient(to bottom right, #2563eb, #1e40af);
+    position: relative;
+    z-index: 1;
+}
+
+#footer-logo .icon-text {
+    position: absolute;
+    transform: none;
+    display: flex;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+}
+
+/* nome da marca ao lado do ícone */
+#footer-logo .logo-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* >>>>>>>>>>FOOTER NAV<<<<<<<<<< */
+
+#footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* >>>>>>>>>>COMPANY<<<<<<<<<< */
+#footer-nav .company p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: -1rem;
+}
+
+#footer-nav .company a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    transition: 0.3 ease;
+}
+
+#footer-nav .company a:hover {
+    color: #2563eb;
+    font-weight: 400;;
+}
+
+/* >>>>>>>>>>CONTACT<<<<<<<<<< */
+#footer-nav .contact p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: -1rem;
+}
+
+#footer-nav .contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+#footer-nav .contact a:hover {
+    color: #2563eb;
+    font-weight: 400;
+}
+
+/* >>>>>>>>>>SOCIAL<<<<<<<<<< */
+
+#icons .container a svg {
+    grid-column: auto;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+    transform: 0.2s ease;
+    margin-top: 1.75rem;
+    margin-right: 1rem;
+    transition: 0.3 ease;
+}
+
+#icons .container a svg:hover {
+    fill: #2563eb;
+}
+
+#Copywrite {
+    position: relative;
+    color: #4b5563;
+    text-align: center;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+#back-to-top {
+    position: fixed;
+    /* sempre visível na tela */
+    bottom: 20px;
+    /* distância da borda inferior */
+    right: 20px;
+    /* distância da borda direita */
+    color: #2563eb;
+    /* cor do texto/flecha */
+    background: none;
+    border-color: #2563eb;
+    transition: all 0.3s ease;
+    /* animação suave */
+}
+
+#back-to-top:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-4px);
+    /* levanta um pouco */
+}
+
+/* ====================================================================================================
+                                                LOGIN PAG 
+========================================================================================================*/
+
+/* >>>>>>>>>>LOGIN SECTION<<<<<<<<<< */
+
+
+/* >>>>>>>>>>REGISTER BTN<<<<<<<<<< */
+
+/*#btn-register button {
+    background: none;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    transition: 0.2s ease;
+}
+
+#btn-register button:hover {
+    transform: #e7f1fd;
+}
+*/
+
+/* >>>>>>>>>>REGISTER SECTIONS<<<<<<<<<< */
+/*#section-register {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#form-register {
+    padding: 50px;
+    display: none;
+}
+
+#form-register h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+#form-register p {
+    color: #424242;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#form-register p label {
+    color: #1f2937;
+    font-weight: 500;
+    text-align: right;
+}
+
+#form-register form {
+    border-color: #424242;
+}
+
+#form-register input {
+    width: 100%;
+}
+*/
+
+/* >>>>>>>>>>LOGIN SECTION<<<<<<<<<< */
+
+#section-login {
+    margin-top: 200px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#section-login h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+}
+
+#section-login form {
+    border-color: #424242;
+}
+
+#form-login {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+#form-login label {
+    display: block;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
+/* >>>>>>>>>>REGISTER SECTION<<<<<<<<<< */
+
+#section-register {
+    display: none;
+    margin-top: 150px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#section-register h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+}
+
+#section-register p {
+    color: #424242;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+#form-register form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+#form-register label {
+    display: block;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
+#form-register input .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+#form-register .btn-link {
+    background: none;
+    border: none;
+    color: #2563eb;
+    text-decoration: underline;
+    padding: 0;
+}
